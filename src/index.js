@@ -1,7 +1,7 @@
 
 const num = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
-let multyNum = ["twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
-let hungred = ['hungred'];
+let multyNum = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
+let hungred = ["hungred"];
 
 module.exports = function toReadable(number) {
     const value = number.toString();
@@ -26,6 +26,7 @@ module.exports = function toReadable(number) {
             const res =  isMiddleZero.trim() + ' ' + lastZero.trim();
             return res.trim();
         }
+        
 
     }
 }
